@@ -1,0 +1,936 @@
+CRITICAL - 2022-09-17 11:19:06 --> syntax error, unexpected token "*", expecting "function" or "const"
+in APPPATH\Controllers\Regiones.php on line 61.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Regiones.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Regiones')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Regiones')
+ 4 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\Regiones', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 11:19:22 --> syntax error, unexpected token "*", expecting "function" or "const"
+in APPPATH\Controllers\Regiones.php on line 61.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Regiones.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Regiones')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Regiones')
+ 4 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\Regiones', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 11:21:04 --> Undefined variable $cod_region
+in APPPATH\Controllers\Regiones.php on line 24.
+ 1 APPPATH\Controllers\Regiones.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cod_region', 'APPPATH\\Controllers\\Regiones.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 11:21:27 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:21:38 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:21:54 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:23:06 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:24:35 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:24:36 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:24:43 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:24:53 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:25:17 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 11:25:17 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Regiones.php(30): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 11:25:24 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 11:25:24 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Regiones.php(30): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 11:25:36 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 11:25:36 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Regiones.php(30): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 11:25:48 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:27:03 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:28:18 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 11:28:18 --> Undefined array key "cod_region"
+in APPPATH\Views\regiones.php on line 90.
+ 1 APPPATH\Views\regiones.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cod_region"', 'APPPATH\\Views\\regiones.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\regiones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('regiones', [], true)
+ 5 APPPATH\Controllers\Regiones.php(30): view('regiones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 11:29:15 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:29:22 --> mysqli_sql_exception: Unknown column 'cod_region' in 'where clause' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->verDatosRegion('1,0')
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-17 11:29:22 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Controllers\Regiones.php(44): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->verDatosRegion('1,0')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 11:29:26 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:29:44 --> mysqli_sql_exception: Unknown column 'cod_region' in 'where clause' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->verDatosRegion('1,0')
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-17 11:29:44 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Controllers\Regiones.php(44): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->verDatosRegion('1,0')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 11:29:47 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 11:30:15 --> Undefined array key "cod_region"
+in APPPATH\Views\actualizar_region.php on line 17.
+ 1 APPPATH\Views\actualizar_region.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cod_region"', 'APPPATH\\Views\\actualizar_region.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_region.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 5 APPPATH\Controllers\Regiones.php(48): view('actualizar_region', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->verDatosRegion('1,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 11:30:35 --> Undefined array key "descripcion"
+in APPPATH\Views\actualizar_region.php on line 25.
+ 1 APPPATH\Views\actualizar_region.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "descripcion"', 'APPPATH\\Views\\actualizar_region.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_region.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 5 APPPATH\Controllers\Regiones.php(48): view('actualizar_region', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->verDatosRegion('1,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 11:48:09 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 11:59:38 --> mysqli_sql_exception: Duplicate entry '3' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Regiones.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Regiones->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:00:18 --> mysqli_sql_exception: Duplicate entry '3' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarRegion()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 12:03:24 --> Class "App\Models\Editorial" not found
+in APPPATH\Controllers\Editoriales.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->actualizarRegion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:04:08 --> Class "App\Models\Editorial" not found
+in APPPATH\Controllers\Editoriales.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->actualizarRegion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:04:25 --> Class "App\Controllers\Region" not found
+in APPPATH\Controllers\Editoriales.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->actualizarRegion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 12:08:00 --> mysqli_sql_exception: Duplicate entry '5' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:09:33 --> mysqli_sql_exception: Duplicate entry '3' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 12:09:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\actualizar_region.php on line 17.
+ 1 APPPATH\Views\actualizar_region.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\actualizar_region.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_region.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('4,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:09:38 --> Trying to access array offset on value of type null
+in APPPATH\Views\actualizar_region.php on line 17.
+ 1 APPPATH\Views\actualizar_region.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\actualizar_region.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_region.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('3,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 12:09:42 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:09:55 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 12:10:28 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(14): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->listarEditoriales()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:11:23 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(14): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->listarEditoriales()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:11:51 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(14): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->listarEditoriales()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:12:13 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(14): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->listarEditoriales()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:15:18 --> Undefined variable $lista_editoriales
+in APPPATH\Views\regiones.php on line 80.
+ 1 APPPATH\Views\regiones.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_editoriales', 'APPPATH\\Views\\regiones.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\regiones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('regiones', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(39): view('regiones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->eliminarEditorial('2,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:15:48 --> Undefined variable $lista_editorial
+in APPPATH\Views\regiones.php on line 80.
+ 1 APPPATH\Views\regiones.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_editorial', 'APPPATH\\Views\\regiones.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\regiones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('regiones', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(39): view('regiones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->eliminarEditorial('2,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:15:57 --> Undefined variable $lista_editorial
+in APPPATH\Views\regiones.php on line 80.
+ 1 APPPATH\Views\regiones.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_editorial', 'APPPATH\\Views\\regiones.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\regiones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('regiones', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(39): view('regiones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->eliminarEditorial('2,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:15:59 --> Undefined variable $lista_editorial
+in APPPATH\Views\regiones.php on line 80.
+ 1 APPPATH\Views\regiones.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_editorial', 'APPPATH\\Views\\regiones.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\regiones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('regiones', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(39): view('regiones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->eliminarEditorial('2,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:16:52 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(39): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->eliminarEditorial('2,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:17:02 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(39): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->eliminarEditorial('2,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:17:28 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(14): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->listarEditoriales()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:21:59 --> Undefined variable $region
+in APPPATH\Views\actualizar_region.php on line 17.
+ 1 APPPATH\Views\actualizar_region.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $region', 'APPPATH\\Views\\actualizar_region.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_region.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('1,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:22:48 --> Undefined variable $region
+in APPPATH\Views\actualizar_region.php on line 17.
+ 1 APPPATH\Views\actualizar_region.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $region', 'APPPATH\\Views\\actualizar_region.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_region.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('1,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:23:19 --> Undefined variable $region
+in APPPATH\Views\actualizar_region.php on line 17.
+ 1 APPPATH\Views\actualizar_region.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $region', 'APPPATH\\Views\\actualizar_region.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_region.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('1,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:29:30 --> Invalid file: actualizar_region.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_region.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('1,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:29:45 --> Invalid file: actualizar_region.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_region.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('1,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:30:39 --> Invalid file: actualizar_region.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_region.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('1,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:30:53 --> Invalid file: actualizar_region.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_region.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('1,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 12:31:59 --> mysqli_sql_exception: Column 'cod_editorial' cannot be null in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:32:13 --> mysqli_sql_exception: Column 'cod_editorial' cannot be null in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:33:38 --> mysqli_sql_exception: Column 'cod_editorial' cannot be null in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:34:08 --> mysqli_sql_exception: Column 'cod_editorial' cannot be null in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 12:34:08 --> Invalid file: regiones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('regiones.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('regiones', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(30): view('regiones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 12:34:29 --> mysqli_sql_exception: Column 'cod_editorial' cannot be null in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:34:39 --> mysqli_sql_exception: Column 'cod_editorial' cannot be null in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:35:32 --> mysqli_sql_exception: Column 'cod_editorial' cannot be null in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:37:15 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:38:44 --> mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 12:42:36 --> Class "App\Controllers\Region" not found
+in APPPATH\Controllers\Editoriales.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosRegion('2,0')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-17 12:43:53 --> mysqli_sql_exception: Duplicate entry '3' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-09-17 12:46:15 --> mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\app\Controllers\Editoriales.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(898): App\Controllers\Editoriales->agregarEditoriales()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4Parcial\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-09-17 12:49:18 --> Invalid file: actualizar_region.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_region.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('2,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:49:32 --> Invalid file: actualizar_region.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_region.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_region', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(48): view('actualizar_region', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('2,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:50:28 --> Undefined variable $region
+in APPPATH\Views\actualizar_editorial.php on line 17.
+ 1 APPPATH\Views\actualizar_editorial.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $region', 'APPPATH\\Views\\actualizar_editorial.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_editorial.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_editorial', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(48): view('actualizar_editorial', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('2,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 12:53:45 --> Undefined variable $region
+in APPPATH\Views\actualizar_editorial.php on line 17.
+ 1 APPPATH\Views\actualizar_editorial.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $region', 'APPPATH\\Views\\actualizar_editorial.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_editorial.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_editorial', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(48): view('actualizar_editorial', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->verDatosEditorial('1,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-17 17:33:21 --> Undefined variable $lista_editorial
+in APPPATH\Views\editoriales.php on line 80.
+ 1 APPPATH\Views\editoriales.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_editorial', 'APPPATH\\Views\\editoriales.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\editoriales.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 5 APPPATH\Controllers\Editoriales.php(14): view('editoriales', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->listarEditoriales()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

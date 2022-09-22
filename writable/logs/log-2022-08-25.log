@@ -1,0 +1,189 @@
+CRITICAL - 2022-08-25 00:01:05 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:01:10 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('8,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:03:23 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('8,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:06:13 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:06:20 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:06:23 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('1,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:07:00 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:10:25 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:13:02 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:14:35 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:17:04 --> Unclosed '{' on line 6
+in APPPATH\Controllers\NivelesAcademicos.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\NivelesAcademicos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\NivelesAcademicos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\NivelesAcademicos')
+ 4 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\NivelesAcademicos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:17:43 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:20:05 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:21:27 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:21:30 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('8,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:22:33 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('8,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:22:35 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('2,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:23:28 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:24:05 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:24:10 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('8,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 00:25:50 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

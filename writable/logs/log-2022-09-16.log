@@ -1,0 +1,22 @@
+CRITICAL - 2022-09-16 18:15:49 --> Undefined array key "cod_region"
+in APPPATH\Views\regiones.php on line 72.
+ 1 APPPATH\Views\regiones.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cod_region"', 'APPPATH\\Views\\regiones.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\regiones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('regiones', [], true)
+ 5 APPPATH\Controllers\Regiones.php(14): view('regiones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->listarRegiones()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 18:16:08 --> Undefined array key "cod_region"
+in APPPATH\Views\regiones.php on line 72.
+ 1 APPPATH\Views\regiones.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cod_region"', 'APPPATH\\Views\\regiones.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\regiones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('regiones', [], true)
+ 5 APPPATH\Controllers\Regiones.php(14): view('regiones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Regiones->listarRegiones()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regiones))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

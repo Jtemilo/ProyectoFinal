@@ -1,0 +1,657 @@
+ERROR - 2022-08-30 18:01:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 18:01:57 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 18:05:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 18:07:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 18:08:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-08-30 18:25:44 --> Undefined variable $apellido
+in APPPATH\Controllers\Ciudadanos.php on line 31.
+ 1 APPPATH\Controllers\Ciudadanos.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apellido', 'APPPATH\\Controllers\\Ciudadanos.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 18:26:05 --> Undefined variable $apellido
+in APPPATH\Controllers\Ciudadanos.php on line 31.
+ 1 APPPATH\Controllers\Ciudadanos.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apellido', 'APPPATH\\Controllers\\Ciudadanos.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 18:26:08 --> Undefined variable $apellido
+in APPPATH\Controllers\Ciudadanos.php on line 31.
+ 1 APPPATH\Controllers\Ciudadanos.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apellido', 'APPPATH\\Controllers\\Ciudadanos.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 18:26:10 --> Undefined variable $apellido
+in APPPATH\Controllers\Ciudadanos.php on line 31.
+ 1 APPPATH\Controllers\Ciudadanos.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apellido', 'APPPATH\\Controllers\\Ciudadanos.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 18:26:11 --> Undefined variable $apellido
+in APPPATH\Controllers\Ciudadanos.php on line 31.
+ 1 APPPATH\Controllers\Ciudadanos.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apellido', 'APPPATH\\Controllers\\Ciudadanos.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 18:26:12 --> Undefined variable $apellido
+in APPPATH\Controllers\Ciudadanos.php on line 31.
+ 1 APPPATH\Controllers\Ciudadanos.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apellido', 'APPPATH\\Controllers\\Ciudadanos.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 18:26:48 --> Undefined variable $apellido
+in APPPATH\Controllers\Ciudadanos.php on line 31.
+ 1 APPPATH\Controllers\Ciudadanos.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apellido', 'APPPATH\\Controllers\\Ciudadanos.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 18:27:05 --> Undefined variable $apellido
+in APPPATH\Controllers\Ciudadanos.php on line 31.
+ 1 APPPATH\Controllers\Ciudadanos.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apellido', 'APPPATH\\Controllers\\Ciudadanos.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 18:27:19 --> Undefined variable $apellido
+in APPPATH\Controllers\Ciudadanos.php on line 31.
+ 1 APPPATH\Controllers\Ciudadanos.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apellido', 'APPPATH\\Controllers\\Ciudadanos.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-30 18:27:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 18:28:04 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 18:52:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 18:55:18 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 18:55:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-08-30 19:00:21 --> Undefined variable $depto
+in APPPATH\Views\actualizar_depto.php on line 17.
+ 1 APPPATH\Views\actualizar_depto.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depto', 'APPPATH\\Views\\actualizar_depto.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_depto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_depto', [], true)
+ 5 APPPATH\Controllers\Ciudadanos.php(64): view('actualizar_depto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->verDatosCiudadano('1005309671217,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:00:23 --> Undefined variable $depto
+in APPPATH\Views\actualizar_depto.php on line 17.
+ 1 APPPATH\Views\actualizar_depto.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depto', 'APPPATH\\Views\\actualizar_depto.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_depto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_depto', [], true)
+ 5 APPPATH\Controllers\Ciudadanos.php(64): view('actualizar_depto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->verDatosCiudadano('1005309671217,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-30 19:00:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 19:00:27 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-08-30 19:00:33 --> Undefined variable $depto
+in APPPATH\Views\actualizar_depto.php on line 17.
+ 1 APPPATH\Views\actualizar_depto.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depto', 'APPPATH\\Views\\actualizar_depto.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_depto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_depto', [], true)
+ 5 APPPATH\Controllers\Ciudadanos.php(64): view('actualizar_depto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->verDatosCiudadano('1005309671217,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-30 19:00:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-08-30 19:01:23 --> Undefined variable $depto
+in APPPATH\Views\actualizar_depto.php on line 17.
+ 1 APPPATH\Views\actualizar_depto.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depto', 'APPPATH\\Views\\actualizar_depto.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_depto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_depto', [], true)
+ 5 APPPATH\Controllers\Ciudadanos.php(64): view('actualizar_depto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->verDatosCiudadano('1005309671217,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-30 19:01:25 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 19:01:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-08-30 19:01:52 --> Undefined variable $depto
+in APPPATH\Views\actualizar_depto.php on line 17.
+ 1 APPPATH\Views\actualizar_depto.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depto', 'APPPATH\\Views\\actualizar_depto.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_depto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_depto', [], true)
+ 5 APPPATH\Controllers\Ciudadanos.php(64): view('actualizar_depto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->verDatosCiudadano('1005309671217,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-30 19:01:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-08-30 19:03:31 --> Undefined variable $depto
+in APPPATH\Views\actualizar_depto.php on line 17.
+ 1 APPPATH\Views\actualizar_depto.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depto', 'APPPATH\\Views\\actualizar_depto.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_depto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_depto', [], true)
+ 5 APPPATH\Controllers\Ciudadanos.php(64): view('actualizar_depto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->verDatosCiudadano('1005309671217,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-30 19:03:33 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-08-30 19:04:15 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:04:58 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:05:02 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:05:30 --> Undefined variable $depto
+in APPPATH\Views\actualizar_depto.php on line 17.
+ 1 APPPATH\Views\actualizar_depto.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depto', 'APPPATH\\Views\\actualizar_depto.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_depto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_depto', [], true)
+ 5 APPPATH\Controllers\Ciudadanos.php(64): view('actualizar_depto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->verDatosCiudadano('1005309671217,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-30 19:07:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-08-30 19:08:34 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:09:39 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:10:18 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:11:07 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:11:16 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('2,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:14:09 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:21:23 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:36:44 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:36:47 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 19:38:06 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('1,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 20:32:26 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-30 20:33:18 --> Invalid file: actualizar_nivel.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('actualizar_nivel.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_nivel', [], true)
+ 3 APPPATH\Controllers\NivelesAcademicos.php(43): view('actualizar_nivel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->verDatosNivel('0,0')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-30 20:41:06 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `niveles...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `niveles...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `niveles...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `niveles...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(692): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\NivelesAcademicos.php(53): CodeIgniter\Model->update(NULL, Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->actualizarDatos()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 20:41:14 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `niveles...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `niveles...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `niveles...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `niveles...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(692): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\NivelesAcademicos.php(53): CodeIgniter\Model->update(NULL, Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\NivelesAcademicos->actualizarDatos()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 20:54:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 20:57:22 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-08-30 21:01:45 --> Array to string conversion
+in APPPATH\Controllers\Ciudadanos.php on line 49.
+ 1 APPPATH\Controllers\Ciudadanos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Ciudadanos.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-30 21:05:04 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 21:08:28 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-08-30 21:40:22 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_ciudadanos`.`ciudadanos`, CONSTRAINT `ciudadanos_ibfk_1` FOREIGN KEY (`lugar_nacimiento`) REFERENCES `municipios` (`cod_muni`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\xampp\htdocs\ejemplo_codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...', Array, false)
+#4 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ejemplo_codeigniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ejemplo_codeigniter4\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ejemplo_codeigniter4\app\Controllers\Ciudadanos.php(55): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(898): App\Controllers\Ciudadanos->agregarCiudadano()
+#9 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ciudadanos))
+#10 C:\xampp\htdocs\ejemplo_codeigniter4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ejemplo_codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
