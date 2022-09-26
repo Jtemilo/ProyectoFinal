@@ -4,22 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Parcial</title>
+    <title>Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Parcial</h1>
+        <div>
+            <img src="../../images/LogoPrincipal.jpg" alt="Sin imagen">
+        </div>
+        <h1>Cafetería el Paladar</h1>
         <h2 class="text-center">Menú principal</h2>
         <div class="list-group">
-            <a href=<?=base_url('editoriales')?> class="list-group-item list-group-item-action">Editoriales</a>
-            <a href=<?=base_url('')?> class="list-group-item list-group-item-action">Autores</a>
-            <a href=<?=base_url('')?> class="list-group-item list-group-item-action">Libros</a>
-            <a href=<?=base_url('')?> class="list-group-item list-group-item-action">Paises</a>
-            <a href=<?=base_url('')?> class="list-group-item list-group-item-action">Libros_Autores</a>
-          
+            <a href=<?= base_url('gerentes') ?> class="list-group-item list-group-item-action">Gerente</a>
+            <a href=<?= base_url('meseros') ?> class="list-group-item list-group-item-action">Meseros</a>
+            <a href=<?= base_url('cocineros') ?> class="list-group-item list-group-item-action">Cocineros</a>
+
+
         </div>
     </div>
 

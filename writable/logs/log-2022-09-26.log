@@ -1,0 +1,9 @@
+CRITICAL - 2022-09-26 15:27:24 --> Invalid file: editoriales.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editoriales.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('editoriales', [], true)
+ 3 APPPATH\Controllers\Editoriales.php(14): view('editoriales', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Editoriales->listarEditoriales()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

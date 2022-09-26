@@ -56,8 +56,11 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 //EDITORIALES
-$routes->get('editoriales', 'Editoriales::listarEditoriales');
-$routes->get('agregar_editorial', 'Editoriales::agregarEditoriales');
+$routes->get('gerentes', 'Restaurantes::listarGerentes');
+$routes->get('meseros', 'Restaurantes::listarMeseros');
+$routes->get('cocineros', 'Restaurantes::listarCocineros');
+$routes->get('ingresar_gerente', 'Restaurantes::agregarEditoriales');
+$routes->get('ingresar_mesero', 'Restaurantes::agregarEditoriales');
 $routes->get('eliminar_editorial/(:num)', 'Editoriales::eliminarEditorial/$1,0');
 $routes->get('datos_editorial/(:num)', 'Editoriales::verDatosEditorial/$1,0');
 $routes->get('actualizar_editorial', 'Editoriales::actualizarEditorial');

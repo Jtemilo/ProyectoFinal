@@ -3,15 +3,29 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\Editorial;
+use App\Models\Restaurante;
 
-class Editoriales extends Controller
+class Restaurantes extends Controller
 {
-    public function listarEditoriales()
+    public function listarGerentes()
     {
-        $editorial=new Editorial();
+        $editorial=new Restaurante();
         $datos['lista_editorial'] = $editorial->findAll();
-        return view('editoriales',$datos);
+        return view('gerentes',$datos);
+    }
+
+    public function listarMeseros()
+    {
+        $editorial=new Restaurante();
+        $datos['lista_editorial'] = $editorial->findAll();
+        return view('meseros',$datos);
+    }
+
+    public function listarCocineros()
+    {
+        $editorial=new Restaurante();
+        $datos['lista_editorial'] = $editorial->findAll();
+        return view('cocineros',$datos);
     }
     public function agregarEditoriales()
     {
@@ -24,14 +38,14 @@ class Editoriales extends Controller
         //echo $cod . $nombre . $cod_editorial;
         $datos = ['cod_editorial' => $cod, 'nombre' => $nombre, 'direccion' => $desp, 
         'telefono' => $tel,  'email' => $mail,  'url' => $url];
-        $editorial = new Editorial();
+        $editorial = new Restaurante();
         $editorial->insert($datos);
         $datos['lista_editorial'] = $editorial->findAll();
         return view('editoriales',$datos);
     }
 
     public function eliminarEditorial($codigo=null){
-        $editorial = new Editorial();
+        $editorial = new Restaurante();
 
         $editorial->delete($codigo);
         //cargar nuevamente la tabla
@@ -40,7 +54,7 @@ class Editoriales extends Controller
     }
 
     public function verDatosEditorial($codigo=null){
-        $editorial = new Editorial();
+        $editorial = new Restaurante();
         $datos['editorial']=$editorial->where('cod_editorial',$codigo)->first();
         
 
@@ -49,7 +63,7 @@ class Editoriales extends Controller
     }
 
     public function actualizarEditorial(){
-        $editorial = new Editorial();
+        $editorial = new Restaurante();
         $cod = $this->request->getVar("txt_editorial");
         $nombre = $this->request->getVar("txt_nombre");
         $desp = $this->request->getVar("txt_direccion");

@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'C:\xampp\htdocs\ProyectoFinal\public';
+    public $baseURL = 'http://localhost/ProyectoFinal/public/';
 
     /**
      * --------------------------------------------------------------------------
