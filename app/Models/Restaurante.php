@@ -6,8 +6,8 @@ use CodeIgniter\Model;
 
 class Restaurante extends Model
 {
-    protected $table      = 'editoriales';
+    protected $table      = 'gerentes';
     // Uncomment below if you want add primary key
-    protected $primaryKey = 'cod_editorial';
-    protected $allowedFields = ['cod_editorial', 'nombre', 'direccion', 'telefono', 'email', 'url'];
+    protected $primaryKey = 'gerente_id';
+    protected $allowedFields = ['gerente_id', 'nombre', 'apellido', 'id_pedido'];
 }
