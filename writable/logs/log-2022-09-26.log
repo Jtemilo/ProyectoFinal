@@ -7,7 +7,134 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editoriales))
  6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+<<<<<<< HEAD
 ERROR - 2022-09-26 19:44:31 --> mysqli_sql_exception: Table 'bd_biblioteca_parcial.gerentes' doesn't exist in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+=======
+ERROR - 2022-09-26 19:36:20 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'bd_biblioteca_parcial' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'bd_biblioteca_p...', 3306, '', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Restaurantes.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Restaurantes->listarGerentes()
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'bd_biblioteca_parcial' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProyectoFinal\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Restaurantes.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Restaurantes->listarGerentes()
+#7 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 19:36:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'bd_biblioteca_parcial'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `editoriales`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Restaurantes.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Restaurantes->listarGerentes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-26 19:36:43 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'bd_biblioteca_parcial' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'bd_biblioteca_p...', 3306, '', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Restaurantes.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Restaurantes->listarGerentes()
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'bd_biblioteca_parcial' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProyectoFinal\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Restaurantes.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Restaurantes->listarGerentes()
+#7 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 19:36:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'bd_biblioteca_parcial'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `editoriales`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Restaurantes.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Restaurantes->listarGerentes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-26 19:36:56 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'bd_biblioteca_parcial' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'bd_biblioteca_p...', 3306, '', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Restaurantes.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Restaurantes->listarGerentes()
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'bd_biblioteca_parcial' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProyectoFinal\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Restaurantes.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Restaurantes->listarGerentes()
+#7 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 19:36:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'bd_biblioteca_parcial'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `editoriales`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Restaurantes.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Restaurantes->listarGerentes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-26 19:37:28 --> mysqli_sql_exception: No database selected in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+>>>>>>> 4d7f7ea718380e7d6abdf34f59c9f6eef4655106
 Stack trace:
 #0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
 #1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
@@ -21,7 +148,11 @@ Stack trace:
 #9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
 #11 {main}
+<<<<<<< HEAD
 CRITICAL - 2022-09-26 19:44:31 --> Call to a member function getResult() on bool
+=======
+CRITICAL - 2022-09-26 19:37:28 --> Call to a member function getResult() on bool
+>>>>>>> 4d7f7ea718380e7d6abdf34f59c9f6eef4655106
 in SYSTEMPATH\Model.php on line 223.
  1 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
  2 APPPATH\Controllers\Restaurantes.php(13): CodeIgniter\BaseModel->findAll()
@@ -29,3 +160,54 @@ in SYSTEMPATH\Model.php on line 223.
  4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
  5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-26 20:27:42 --> syntax error, unexpected token "<<", expecting "]"
+in APPPATH\Config\Database.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Config\\Database.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+ 3 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(249): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+ 4 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(69): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 5 SYSTEMPATH\Debug\Toolbar.php(65): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 6 SYSTEMPATH\Config\Services.php(714): CodeIgniter\Debug\Toolbar->__construct(Object(Config\Toolbar))
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::toolbar(Object(Config\Toolbar), false)
+ 8 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+ 9 SYSTEMPATH\Config\Services.php(709): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+10 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::toolbar()
+11 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+12 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+13 SYSTEMPATH\CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('C:\\', 'after')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-26 20:29:43 --> syntax error, unexpected token "<<", expecting "]"
+in APPPATH\Config\Database.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Config\\Database.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+ 3 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(249): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+ 4 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(69): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 5 SYSTEMPATH\Debug\Toolbar.php(65): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 6 SYSTEMPATH\Config\Services.php(714): CodeIgniter\Debug\Toolbar->__construct(Object(Config\Toolbar))
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::toolbar(Object(Config\Toolbar), false)
+ 8 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+ 9 SYSTEMPATH\Config\Services.php(709): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+10 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::toolbar()
+11 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+12 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+13 SYSTEMPATH\CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('C:\\', 'after')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-26 20:29:50 --> syntax error, unexpected token "<<", expecting "]"
+in APPPATH\Config\Database.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Config\\Database.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+ 3 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(249): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+ 4 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(69): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 5 SYSTEMPATH\Debug\Toolbar.php(65): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 6 SYSTEMPATH\Config\Services.php(714): CodeIgniter\Debug\Toolbar->__construct(Object(Config\Toolbar))
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::toolbar(Object(Config\Toolbar), false)
+ 8 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+ 9 SYSTEMPATH\Config\Services.php(709): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+10 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::toolbar()
+11 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+12 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+13 SYSTEMPATH\CodeIgniter.php(477): CodeIgniter\Filters\Filters->run('C:\\', 'after')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

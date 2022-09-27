@@ -12,7 +12,7 @@
 
     <div class="container">
         <div>
-            <img src="../../images/LogoPrincipal.jpg" alt="Sin imagen">
+            <img src="../images/LogoPrincipal.jpg" alt="Sin imagen">
         </div>
         <h1>Cafetería el Paladar</h1>
         <h2 class="text-center">Menú principal</h2>
