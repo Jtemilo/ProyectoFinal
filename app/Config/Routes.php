@@ -64,3 +64,4 @@ $routes->get('ingresar_mesero', 'Restaurantes::agregarEditoriales');
 $routes->get('eliminar_editorial/(:num)', 'Editoriales::eliminarEditorial/$1,0');
 $routes->get('datos_editorial/(:num)', 'Editoriales::verDatosEditorial/$1,0');
 $routes->get('actualizar_editorial', 'Editoriales::actualizarEditorial');
+$routes->post('sesion_gerente', 'Gerentes::iniciarSesion');
