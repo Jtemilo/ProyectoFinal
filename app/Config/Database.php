@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => '',
+        'database' => 'proyecto_final_pp_2022',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
