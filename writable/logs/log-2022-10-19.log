@@ -1,0 +1,435 @@
+ERROR - 2022-10-19 13:49:45 --> mysqli_sql_exception: Duplicate entry '5' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `me...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `me...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `me...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `me...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Meseros.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Meseros->guardarMeseros()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meseros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-19 14:07:30 --> Undefined array key "cod_mesero"
+in APPPATH\Views\actualizar_mesero.php on line 18.
+ 1 APPPATH\Views\actualizar_mesero.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cod_mesero"', 'APPPATH\\Views\\actualizar_mesero.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_mesero.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_mesero', [], true)
+ 5 APPPATH\Controllers\Meseros.php(54): view('actualizar_mesero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Meseros->actualizarMesero()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meseros))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 16:09:40 --> mysqli_sql_exception: Column 'cocinero_id' cannot be null in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->guardarCocineros()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:12:15 --> mysqli_sql_exception: Column 'cocinero_id' cannot be null in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->guardarCocineros()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:12:56 --> mysqli_sql_exception: Column 'cocinero_id' cannot be null in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->guardarCocineros()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:19:14 --> mysqli_sql_exception: Column 'cocinero_id' cannot be null in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->guardarCocineros()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:19:28 --> mysqli_sql_exception: Column 'cocinero_id' cannot be null in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->guardarCocineros()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:24:36 --> mysqli_sql_exception: Column 'cocinero_id' cannot be null in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->guardarCocineros()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:24:44 --> mysqli_sql_exception: Column 'cocinero_id' cannot be null in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->guardarCocineros()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:40:30 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:40:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:58:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:59:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 16:59:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 17:04:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('5', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 17:05:13 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('5', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 17:05:18 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('5', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 17:05:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('5', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 17:05:57 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('5', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 17:06:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`cocineros`, CONSTRAINT `cocineros_ibfk_1` FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades` (`especialidad_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cociner...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cociner...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cociner...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cociner...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(54): CodeIgniter\Model->update('5', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->actualizarCocinero()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-19 17:41:46 --> Call to a member function insert() on string
+in APPPATH\Controllers\Estados.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Estados->guardarEstado()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estados))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 17:45:44 --> Call to a member function insert() on string
+in APPPATH\Controllers\Estados.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Estados->guardarEstado()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estados))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 17:56:44 --> mysqli_sql_exception: Duplicate entry '6' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `es...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `es...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `es...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `es...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Estados.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Estados->guardarEstado()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estados))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 18:07:10 --> mysqli_sql_exception: Duplicate entry '6' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `es...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `es...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `es...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `es...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Estados.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Estados->guardarEstado()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estados))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 18:18:06 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `estados...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `estados...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `estados...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `estados...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Estados.php(50): CodeIgniter\Model->update(NULL, Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Estados->actualizarEstado()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estados))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 18:19:21 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `estados...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `estados...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `estados...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `estados...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Estados.php(50): CodeIgniter\Model->update(NULL, Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Estados->actualizarEstado()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estados))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-19 19:35:51 --> Undefined variable $elemento_artista
+in APPPATH\Views\especialidad.php on line 75.
+ 1 APPPATH\Views\especialidad.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $elemento_artista', 'APPPATH\\Views\\especialidad.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\especialidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('especialidad', [], true)
+ 5 APPPATH\Controllers\Especialidades.php(11): view('especialidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Especialidades->buscarEspecialidad()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Especialidades))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 19:40:27 --> mysqli_sql_exception: Duplicate entry '5' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `es...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `es...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `es...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `es...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Especialidades.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Especialidades->guardarEspecialidad()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Especialidades))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-19 21:38:02 --> mysqli_sql_exception: Duplicate entry '5' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `es...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `es...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `es...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `es...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Especialidades.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Especialidades->guardarEspecialidad()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Especialidades))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-19 21:38:02 --> Undefined array key "id_especialidad"
+in APPPATH\Views\especialidad.php on line 80.
+ 1 APPPATH\Views\especialidad.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_especialidad"', 'APPPATH\\Views\\especialidad.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\especialidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('especialidad', [], true)
+ 5 APPPATH\Controllers\Especialidades.php(24): view('especialidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Especialidades->guardarEspecialidad()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Especialidades))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-19 21:38:37 --> mysqli_sql_exception: Duplicate entry '5' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `es...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `es...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `es...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `es...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Especialidades.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Especialidades->guardarEspecialidad()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Especialidades))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}

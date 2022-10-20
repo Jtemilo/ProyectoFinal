@@ -57,11 +57,33 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 }
 //EDITORIALES
 $routes->get('gerentes', 'Restaurantes::listarGerentes');
-$routes->get('meseros', 'Restaurantes::listarMeseros');
-$routes->get('cocineros', 'Restaurantes::listarCocineros');
 $routes->get('ingresar_gerente', 'Restaurantes::agregarEditoriales');
 $routes->get('ingresar_mesero', 'Restaurantes::agregarEditoriales');
 $routes->get('eliminar_editorial/(:num)', 'Editoriales::eliminarEditorial/$1,0');
 $routes->get('datos_editorial/(:num)', 'Editoriales::verDatosEditorial/$1,0');
 $routes->get('actualizar_editorial', 'Editoriales::actualizarEditorial');
 $routes->post('sesion_gerente', 'Gerentes::iniciarSesion');
+
+$routes->get('meseros', 'Meseros::buscarMeseros');
+$routes->post('guardar_mesero', 'Meseros::guardarMeseros');
+$routes->get('eliminar_mesero/(:num)', 'Meseros::eliminarMesero/$1,0');
+$routes->post('actualizar_mesero1', 'Meseros::actualizarMesero');
+$routes->get('actualizar_mesero/(:num)', 'Meseros::verMesero/$1,0');
+
+$routes->get('cocineros', 'Cocineros::buscarCocineros');
+$routes->post('guardar_cocinero', 'Cocineros::guardarCocineros');
+$routes->get('eliminar_cocinero/(:num)', 'Cocineros::eliminarCocinero/$1,0');
+$routes->post('actualizar_cocinero1', 'Cocineros::actualizarCocinero');
+$routes->get('actualizar_cocinero/(:num)', 'Cocineros::verCocinero/$1,0');
+
+$routes->get('estados', 'Estados::buscarEstado');
+$routes->post('guardar_estado', 'Estados::guardarEstado');
+$routes->get('eliminar_estado/(:num)', 'Estados::eliminarEstado/$1,0');
+$routes->post('actualizar_estado1', 'Estados::actualizarEstado');
+$routes->get('actualizar_estado/(:num)', 'Estados::verEstado/$1,0');
+
+$routes->get('especialidades', "Especialidades::buscarEspecialidad");
+$routes->post('guardar_especialidad', 'Especialidades::guardarEspecialidad');
+$routes->get('eliminar_especialidad/(:num)', 'Especialidades::eliminarEspecialidad/$1,0');
+$routes->post('actualizar_especialidad1', 'Especialidades::actualizarEspecialidad');
+$routes->get('actualizar_especialidad/(:num)', 'Especialidades::verEspecialidad/$1,0');

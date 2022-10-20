@@ -11,10 +11,15 @@
 <body>
 
     <div class="container">
+        <marquee>
         <div aalign="center">
-            <img src="../nueva/LogoPrincipal.jpg" alt="Sin imagen">
+            <img src="../nueva/LogoPrincipal.jpg" alt="Sin imagen" width="500" height="300">
+            <img src="../nueva/img1.jpg" width="500" height="300">
+            <img src="../nueva/img2.jpg" width="500" height="300">
+            <img src="../nueva/img3.jpg" width="500" height="300">
         </div>
-        <h1 class="text-center" id="exampleModalLabel">Cafetería el Paladar</h1>
+        </marquee>
+        <h1 class="text-center" id="exampleModalLabel">Cafetería el Paladar </h1>
         <h2 class="text-center">Inicio de Sesión</h2>
         <div class="col-md-4 offset-md-4 bg-light border rounded-2">
             <?php
