@@ -21,7 +21,33 @@ $(document).ready(function() {
                     "sortAscending": ": Activar para ordenar la columna de manera ascendente",
                     "sortDescending": ": Activar para ordenar la columna de manera descendente"
                 },
-                
+                "buttons": {
+                    "copy": "Copiar",
+                    "colvis": "Visibilidad",
+                    "collection": "Colección",
+                    "colvisRestore": "Restaurar visibilidad",
+                    "copyKeys": "Presione ctrl o u2318 + C para copiar los datos de la tabla al portapapeles del sistema. <br \/> <br \/> Para cancelar, haga clic en este mensaje o presione escape.",
+                    "copySuccess": {
+                        "1": "Copiada 1 fila al portapapeles",
+                        "_": "Copiadas %ds fila al portapapeles"
+                    },
+                    "copyTitle": "Copiar al portapapeles",
+                    "csv": "CSV",
+                    "excel": "Excel",
+                    "pageLength": {
+                        "-1": "Mostrar todas las filas",
+                        "_": "Mostrar %d filas"
+                    },
+                    "pdf": "PDF",
+                    "print": "Imprimir",
+                    "renameState": "Cambiar nombre",
+                    "updateState": "Actualizar",
+                    "createState": "Crear Estado",
+                    "removeAllStates": "Remover Estados",
+                    "removeState": "Remover",
+                    "savedStates": "Estados Guardados",
+                    "stateRestore": "Estado %d"
+                },
                 "autoFill": {
                     "cancel": "Cancelar",
                     "fill": "Rellene todas las celdas con <i>%d<\/i>",
@@ -216,32 +242,7 @@ $(document).ready(function() {
                     "removeTitle": "Remover Estado",
                     "renameTitle": "Cambiar Nombre Estado"
                 }
-            },
-
-
-            //para usar los botones   
-        responsive: "true",
-        dom: 'Bfrtilp',       
-        buttons:[ 
-			{
-				extend:    'excelHtml5',
-				text:      '<i class="fas fa-file-excel"></i> ',
-				titleAttr: 'Exportar a Excel',
-				className: 'btn btn-success'
-			},
-			{
-				extend:    'pdfHtml5',
-				text:      '<i class="fas fa-file-pdf"></i> ',
-				titleAttr: 'Exportar a PDF',
-				className: 'btn btn-danger'
-			},
-			{
-				extend:    'print',
-				text:      '<i class="fa fa-print"></i> ',
-				titleAttr: 'Imprimir',
-				className: 'btn btn-info'
-			},
-		]
+            }
             
         }
         
