@@ -23,7 +23,7 @@
         <div class="list-group">
             <a href="<?=base_url('cocineros')?>" class="list-group-item list-group-item-action">Cocineros</a>
             <a href="<?=base_url('meseros')?>" class="list-group-item list-group-item-action">Meseros</a>
-            <a href="<?=base_url('')?>" class="list-group-item list-group-item-action">Pedidos</a>
+            <a href="<?=base_url('pedido')?>" class="list-group-item list-group-item-action">Pedidos</a>
             <a href="<?=base_url('')?>" class="list-group-item list-group-item-action">Detalle_pedidos</a>
             <a href="<?=base_url('especialidades')?>" class="list-group-item list-group-item-action">Especialidades</a>
         </div>

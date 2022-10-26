@@ -1,0 +1,145 @@
+CRITICAL - 2022-10-26 17:40:26 --> Undefined variable $lista_mesero
+in APPPATH\Views\pedido.php on line 96.
+ 1 APPPATH\Views\pedido.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_mesero', 'APPPATH\\Views\\pedido.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pedido.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('pedido', [], true)
+ 5 APPPATH\Controllers\Pedidos.php(11): view('pedido', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pedidos->buscarPedidos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 17:43:45 --> Undefined variable $elemento_mesero
+in APPPATH\Views\pedido.php on line 107.
+ 1 APPPATH\Views\pedido.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $elemento_mesero', 'APPPATH\\Views\\pedido.php', 107)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pedido.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('pedido', [], true)
+ 5 APPPATH\Controllers\Pedidos.php(11): view('pedido', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pedidos->buscarPedidos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 17:55:38 --> Undefined variable $lista_mesero
+in APPPATH\Views\mesero.php on line 96.
+ 1 APPPATH\Views\mesero.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_mesero', 'APPPATH\\Views\\mesero.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mesero.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('mesero', [], true)
+ 5 APPPATH\Controllers\Pedidos.php(33): view('mesero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pedidos->eliminarPedidos('3,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-26 17:57:02 --> mysqli_sql_exception: Duplicate entry '3' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Pedidos.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Pedidos->guardarPedidos()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-26 18:01:21 --> mysqli_sql_exception: Column 'cod_mesero' cannot be null in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Pedidos.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Pedidos->guardarPedidos()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-26 18:04:08 --> mysqli_sql_exception: Duplicate entry '3' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Pedidos.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Pedidos->guardarPedidos()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-26 18:07:50 --> mysqli_sql_exception: Duplicate entry '3' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Pedidos.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Pedidos->guardarPedidos()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-26 18:08:32 --> Undefined variable $lista_mesero
+in APPPATH\Views\actualizar_pedidos.php on line 18.
+ 1 APPPATH\Views\actualizar_pedidos.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_mesero', 'APPPATH\\Views\\actualizar_pedidos.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_pedidos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_pedidos', [], true)
+ 5 APPPATH\Controllers\Pedidos.php(39): view('actualizar_pedidos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pedidos->verPedidos('3,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 18:14:20 --> Undefined variable $lista_mesero
+in APPPATH\Views\actualizar_pedidos.php on line 22.
+ 1 APPPATH\Views\actualizar_pedidos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_mesero', 'APPPATH\\Views\\actualizar_pedidos.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_pedidos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_pedidos', [], true)
+ 5 APPPATH\Controllers\Pedidos.php(39): view('actualizar_pedidos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pedidos->verPedidos('3,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-26 18:16:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`cod_mesero`) REFERENCES `meseros` (`cod_mesero`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `pedidos...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pedidos...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pedidos...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `pedidos...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Pedidos.php(52): CodeIgniter\Model->update('3', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Pedidos->actualizarPedidos()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-26 18:22:09 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`pedidos`, CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`cod_mesero`) REFERENCES `meseros` (`cod_mesero`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `pedidos...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pedidos...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pedidos...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `pedidos...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Pedidos.php(52): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Pedidos->actualizarPedidos()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
