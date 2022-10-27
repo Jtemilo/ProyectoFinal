@@ -6,9 +6,9 @@ use App\Models\Pedido;
 class Pedidos extends Controller{
 
     public function buscarPedidos(){
-        $mesero = new Pedido();
-        $datoMesero['lista_pedidos'] = $mesero->findAll();
-        return view('pedido', $datoMesero);
+        $pedido = new Pedido();
+        $datoPedido['lista_pedidos'] = $pedido->findAll();
+        return view('pedido', $datoPedido);
     }
 
   public function guardarPedidos(){
@@ -34,9 +34,9 @@ class Pedidos extends Controller{
   }
 
   public function verPedidos($cod=null){
-    $mesero = new Pedido;
-    $datoMesero['lista_pedidos']=$mesero->where('id_pedido', $cod)->first();
-    return view('actualizar_pedidos', $datoMesero);
+    $pedido = new Pedido;
+    $datoPedido['lista_pedidos']=$pedido->where('id_pedido', $cod)->first();
+    return view('actualizar_pedidos', $datoPedido);
   }
 
   public function actualizarPedidos(){
@@ -50,8 +50,8 @@ class Pedidos extends Controller{
     $datos=['id_pedido'=>$cod, 'cod_mesero'=>$mesero, 'fecha_pedido'=>$fecha, 'gerente_id'=>$gerente, 'fecha_hora'=>$hora];
 
     $pedido->update($cod, $datos);
-    $datoMesero['lista_pedidos']=$pedido->findAll();
-    return view('pedido', $datoMesero);
+    $datoPedido['lista_pedidos']=$pedido->findAll();
+    return view('pedido', $datoPedido);
 
   }
 }
