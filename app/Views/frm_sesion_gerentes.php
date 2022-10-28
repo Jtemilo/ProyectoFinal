@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <center>
+<button type="button" class="btn btn-outline-dark">
+<a href="<?=base_url('creditos')?>" style="text-decoration:none">Creditos</a>
+</button>
+    </center>
 
     <div class="container">
         <marquee>
@@ -21,6 +26,7 @@
         </marquee>
         <h1 class="text-center" id="exampleModalLabel">Cafetería el Paladar </h1>
         <h2 class="text-center">Inicio de Sesión</h2>
+        
         <div class="col-md-4 offset-md-4 bg-light border rounded-2">
             <?php
             /*verificar si la session existe, se crea cuando los datos del usuario son incorrectos, retornando
@@ -45,6 +51,8 @@
                 </div>
             </form>
             <br>
+           
+           
         </div>
     </div>
 

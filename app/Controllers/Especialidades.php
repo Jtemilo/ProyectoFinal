@@ -59,4 +59,8 @@ class Especialidades extends Controller{
         return view('especialidad', $datoEspecialidad);
     
     }
+
+    public function verCreditos(){
+        return view('creditos');
+    }
 }

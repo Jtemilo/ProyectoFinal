@@ -87,6 +87,7 @@ $routes->post('guardar_especialidad', 'Especialidades::guardarEspecialidad');
 $routes->get('eliminar_especialidad/(:num)', 'Especialidades::eliminarEspecialidad/$1,0');
 $routes->post('actualizar_especialidad1', 'Especialidades::actualizarEspecialidad');
 $routes->get('actualizar_especialidad/(:num)', 'Especialidades::verEspecialidad/$1,0');
+$routes->get('creditos', 'Especialidades::verCreditos');
 
 $routes->get('pedido', 'Pedidos::buscarPedidos');
 $routes->post('guardar_pedidos', 'Pedidos::guardarPedidos');
