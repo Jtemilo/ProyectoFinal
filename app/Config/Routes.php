@@ -100,3 +100,9 @@ $routes->post('guardar_detallesPedidos', 'DetallesPedidos::guardarDetallesPedido
 $routes->get('eliminar_detallesPedidos/(:num)', 'DetallesPedidos::eliminarDetallesPedidos/$1,0');
 $routes->post('actualizar_detallesPedidos', 'DetallesPedidos::actualizarDetallesPedidos');
 $routes->get('actualizar_detallesPedidos/(:num)', 'DetallesPedidos::verDetallesPedidos/$1,0');
+
+$routes->get('jefe', 'Jefes::buscarJefes');
+$routes->post('guardar_jefes', 'Jefes::guardarJefes');
+$routes->get('eliminar_jefes/(:num)', 'Jefes::eliminarJefes/$1,0');
+$routes->post('actualizar_jefes', 'Jefes::actualizarJefes');
+$routes->get('actualizar_jefes/(:num)', 'Jefes::verJefes/$1,0');
