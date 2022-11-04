@@ -100,3 +100,15 @@ $routes->post('guardar_detallesPedidos', 'DetallesPedidos::guardarDetallesPedido
 $routes->get('eliminar_detallesPedidos/(:num)', 'DetallesPedidos::eliminarDetallesPedidos/$1,0');
 $routes->post('actualizar_detallesPedidos', 'DetallesPedidos::actualizarDetallesPedidos');
 $routes->get('actualizar_detallesPedidos/(:num)', 'DetallesPedidos::verDetallesPedidos/$1,0');
+
+$routes->get('Platos', 'Platos::buscarPlatos');
+$routes->post('guardar_platos', 'Platos::guardarPlatos');
+$routes->get('eliminarPlatos/(:num)', 'Platos::eliminarPlatos/$1,0');
+$routes->post('actualizar_Platos1', 'Platos::actualizarplatos');
+$routes->get('actualizar_Platos/(:num)','Platos::verplatos/$1,0');
+
+$routes->get('Tamaños', 'Tamaños::buscarTamaños');
+$routes->post('guardar_tamaño', 'Tamaños::guardarTamaños');
+$routes->get('eliminar_tamaño/(:num)', 'Tamaños::eliminarTamaño/$1,0');
+$routes->post('actualizar_tamaño1', 'Tamaños::actualizarTamaño');
+$routes->get('actualizar_tamaño/(:num)', 'Tamaños::verTamaños/$1,0');
