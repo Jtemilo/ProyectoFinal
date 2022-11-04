@@ -26,6 +26,7 @@
             <a href="<?=base_url('pedido')?>" class="list-group-item list-group-item-action">Pedidos</a>
             <a href="<?=base_url('detallePedido')?>" class="list-group-item list-group-item-action">Detalle_pedidos</a>
             <a href="<?=base_url('especialidades')?>" class="list-group-item list-group-item-action">Especialidades</a>
+            <a href="<?=base_url('jefe')?>" class="list-group-item list-group-item-action">Jefes</a>
         </div>
     </div>
 

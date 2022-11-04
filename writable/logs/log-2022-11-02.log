@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-11-02 19:50:57 --> Call to undefined method App\Controllers\Tamaños::findAll()
 in APPPATH\Controllers\Tamaños.php on line 10.
  1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Tamaños->buscarTamaños()
@@ -693,3 +694,116 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tamaños))
  6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+=======
+CRITICAL - 2022-11-02 23:07:53 --> Invalid file: jefe.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jefe.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('jefe', [], true)
+ 3 APPPATH\Controllers\Jefes.php(11): view('jefe', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->buscarJefes()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 23:11:13 --> Invalid file: jefe.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jefe.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('jefe', [], true)
+ 3 APPPATH\Controllers\Jefes.php(11): view('jefe', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->buscarJefes()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 23:15:29 --> Invalid file: jefe.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jefe.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('jefe', [], true)
+ 3 APPPATH\Controllers\Jefes.php(11): view('jefe', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->buscarJefes()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 23:17:25 --> Invalid file: jefe.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jefe.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('jefe', [], true)
+ 3 APPPATH\Controllers\Jefes.php(11): view('jefe', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->buscarJefes()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 23:21:50 --> Invalid file: jefe.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jefe.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('jefe', [], true)
+ 3 APPPATH\Controllers\Jefes.php(11): view('jefe', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->buscarJefes()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 23:23:47 --> Invalid file: jefe.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jefe.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('jefe', [], true)
+ 3 APPPATH\Controllers\Jefes.php(11): view('jefe', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->buscarJefes()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 23:24:30 --> Undefined variable $lista_gerente
+in APPPATH\Views\jefes.php on line 95.
+ 1 APPPATH\Views\jefes.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_gerente', 'APPPATH\\Views\\jefes.php', 95)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jefes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('jefes', [], true)
+ 5 APPPATH\Controllers\Jefes.php(11): view('jefes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->buscarJefes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 23:26:14 --> Undefined variable $lista_gerente
+in APPPATH\Views\jefes.php on line 95.
+ 1 APPPATH\Views\jefes.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_gerente', 'APPPATH\\Views\\jefes.php', 95)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jefes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('jefes', [], true)
+ 5 APPPATH\Controllers\Jefes.php(11): view('jefes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->buscarJefes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 23:26:34 --> Undefined variable $elemento_cocinero
+in APPPATH\Views\jefes.php on line 106.
+ 1 APPPATH\Views\jefes.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $elemento_cocinero', 'APPPATH\\Views\\jefes.php', 106)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jefes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('jefes', [], true)
+ 5 APPPATH\Controllers\Jefes.php(11): view('jefes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->buscarJefes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 23:31:32 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Jefes.php(54): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->actualizarJefes()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 23:42:40 --> mysqli_sql_exception: Column 'telefono' cannot be null in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\Cocineros.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\Cocineros->guardarCocineros()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cocineros))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+>>>>>>> b75bcc024da9981aa5d015b1d5c79d425a2d3ee0

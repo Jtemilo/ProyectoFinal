@@ -101,6 +101,7 @@ $routes->get('eliminar_detallesPedidos/(:num)', 'DetallesPedidos::eliminarDetall
 $routes->post('actualizar_detallesPedidos', 'DetallesPedidos::actualizarDetallesPedidos');
 $routes->get('actualizar_detallesPedidos/(:num)', 'DetallesPedidos::verDetallesPedidos/$1,0');
 
+<<<<<<< HEAD
 $routes->get('Platos', 'Platos::buscarPlatos');
 $routes->post('guardar_platos', 'Platos::guardarPlatos');
 $routes->get('eliminarPlatos/(:num)', 'Platos::eliminarPlatos/$1,0');
@@ -112,3 +113,10 @@ $routes->post('guardar_tamaño', 'Tamaños::guardarTamaños');
 $routes->get('eliminar_tamaño/(:num)', 'Tamaños::eliminarTamaño/$1,0');
 $routes->post('actualizar_tamaño1', 'Tamaños::actualizarTamaño');
 $routes->get('actualizar_tamaño/(:num)', 'Tamaños::verTamaños/$1,0');
+=======
+$routes->get('jefe', 'Jefes::buscarJefes');
+$routes->post('guardar_jefes', 'Jefes::guardarJefes');
+$routes->get('eliminar_jefes/(:num)', 'Jefes::eliminarJefes/$1,0');
+$routes->post('actualizar_jefes', 'Jefes::actualizarJefes');
+$routes->get('actualizar_jefes/(:num)', 'Jefes::verJefes/$1,0');
+>>>>>>> b75bcc024da9981aa5d015b1d5c79d425a2d3ee0
