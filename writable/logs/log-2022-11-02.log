@@ -109,3 +109,14 @@ Stack trace:
 #10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
+CRITICAL - 2022-11-02 23:52:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\actualizar_jefes.php on line 18.
+ 1 APPPATH\Views\actualizar_jefes.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\actualizar_jefes.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\actualizar_jefes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('actualizar_jefes', [], true)
+ 5 APPPATH\Controllers\Jefes.php(40): view('actualizar_jefes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Jefes->verJefes('502,0')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

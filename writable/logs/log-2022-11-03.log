@@ -1,0 +1,15 @@
+ERROR - 2022-11-03 19:54:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto_final_pp_2022`.`detalles_pedidos`, CONSTRAINT `detalles_pedidos_ibfk_1` FOREIGN KEY (`id_pedido`) REFERENCES `pedidos` (`id_pedido`) ON UPDATE CASCADE) in C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFinal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\ProyectoFinal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\ProyectoFinal\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoFinal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoFinal\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoFinal\app\Controllers\DetallesPedidos.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(898): App\Controllers\DetallesPedidos->guardarDetallesPedidos()
+#9 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetallesPedidos))
+#10 C:\xampp\htdocs\ProyectoFinal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoFinal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
