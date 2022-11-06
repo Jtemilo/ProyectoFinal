@@ -29,8 +29,8 @@ class Pedidos extends Controller{
   public function eliminarPedidos($cod = null){
     $pedido = new Pedido();
     $pedido->delete($cod);
-    $datoPedido['lista_pedidos'] = $pedido->findAll();
-    return view('pedido', $datoPedido);
+    
+    
   }
 
   public function verPedidos($cod=null){

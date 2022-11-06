@@ -20,8 +20,8 @@
         <h2 class="text-center">MESEROS</h2>
         
         <div class="list-group">
-            <a href="<?=base_url('')?>" class="list-group-item list-group-item-action">Platos</a>
-            <a href="<?=base_url('')?>" class="list-group-item list-group-item-action">Tamaños</a>
+            <a href="<?=base_url('Platos')?>" class="list-group-item list-group-item-action">Platos</a>
+            <a href="<?=base_url('Tamaños')?>" class="list-group-item list-group-item-action">Tamaños</a>
             <a href="<?=base_url('')?>" class="list-group-item list-group-item-action">Bebidas</a>
             <a href="<?=base_url('estados')?>" class="list-group-item list-group-item-action">Estado Pedidos</a>
         </div>
